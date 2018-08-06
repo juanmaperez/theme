@@ -1,0 +1,405 @@
+/* @group Globals ============================================ */
+/* @group Layout --------------------------------------------- */
+
+	* {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale }
+
+	html, body {
+		font-family: "Roboto", sans-serif }
+
+	.social-icons-lists {
+		padding: 0;
+		margin: 0 }
+
+/* @end */
+/* @end */
+/* @group Header ============================================= */
+/* @group Layout --------------------------------------------- */
+
+	body > header .logotype {
+		height: 24px;
+		width: auto }
+
+/* @end */
+/* @group Top bar -------------------------------------------- */
+
+	body > header > .blog-navbar {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		-webkit-transition: padding 0.4s ease;
+		-moz-transition: padding 0.4s ease;
+		transition: padding 0.4s ease  }
+
+	body > header > .navbar.contracted {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		-webkit-transition: padding 0.2s ease;
+		-moz-transition: padding 0.2s ease;
+		transition: padding 0.2s ease }
+
+	body.customize-support > header > .navbar {
+		top: 32px }
+
+	/* Responsive ---------------------------------------------- */
+
+	@media (max-width: 768px) {
+
+		body.customize-support > header > .navbar {
+			top: 48px }
+
+	}
+
+/* @end */
+/* @group Hero ----------------------------------------------- */
+
+	.hero {
+		padding: 0;
+		text-align: center;
+		background-position: center;
+		background-size: cover }
+
+	.hero-caption {
+		padding: 200px 20px 100px 20px }
+
+
+	.hero .blog-title {
+		margin: 0;
+		font-size: 52px;
+		font-weight: 500;
+		line-height: 120% }
+
+
+	/* Responsive ---------------------------------------------- */
+
+	@media (max-width: 768px) {
+
+		.hero-caption {
+			padding-top: 120px;
+			padding-bottom: 20px; }
+
+		.hero .blog-title {
+			font-size: 32px;
+		}
+
+		.hero .blog-subtitle {
+			font-size: 18px;
+		}
+
+	}
+
+/* @end */
+/* @end */
+/* @group Body =============================================== */
+/* @group Layout --------------------------------------------- */
+
+/* @end */
+/* @group Post listing --------------------------------------- */
+
+	.post-listing .post-item {
+		padding-bottom: 30px;
+		border-bottom: 1px solid #ddd }
+
+	/* Meta */
+
+	.post-listing .post-item .post-meta {
+		margin: 25px 0 }
+
+	.post-listing .post-item .post-meta .meta-item {
+		float: left;
+		margin: 0 0 0 10px;
+		padding: 0 0 0 10px;
+		border-left: 1px solid #ddd }
+
+	.post-listing .post-item .post-meta .meta-item:first-child {
+		margin: 0;
+		padding: 0;
+		border-left: none }
+
+	.post-listing .post-item .post-meta .meta-item.meta-author {
+		position: relative;
+		padding-left: 52px;
+		font-weight: bold }
+
+	.post-listing .post-item .post-meta .meta-author img {
+		position: absolute;
+		top: -12px;
+		left: 0px;
+		margin-right: 10px }
+
+	.post-listing .post-item .post-meta .meta-categories ul {
+		margin: 0 }
+
+	.post-listing .post-item .post-meta .meta-categories ul li {
+		padding: 0;
+		margin: 0 10px 0 0 }
+
+	.post-listing .post-item .meta-date {
+		margin-bottom: 10px }
+
+	.post-listing .post-item .post-thumbnail {
+		width: 100% }
+
+	.post-listing .post-item .read-more {
+		margin-top: 20px }
+
+	.post-listing .post-item .ic-social-icons {
+		float: right }
+
+	/* Responsive ---------------------------------------------- */
+
+	@media (max-width: 990px) {
+
+		.post-listing .post-item .post-thumbnail {
+			margin-bottom: 10px }
+
+	}
+
+/* @end */
+/* @group Post body ------------------------------------------ */
+
+
+	.post-body .post-header h1 {
+	    color: #474747 !important;
+	    margin-top: 0px !important;
+	    font-size: 50px !important;
+	}
+
+	.post-body .post-meta {
+			margin: 50px 0 20px;}
+
+	.post-body .post-meta .meta-item {
+		float: left;
+		margin: 0 0 0 10px;
+		padding: 0 0 0 10px;
+		border-left: 1px solid #ddd }
+
+	.post-body .post-meta .meta-item:first-child {
+		margin: 0;
+		padding: 0;
+		border-left: none }
+
+	.post-body .post-meta .meta-item.meta-author {
+		position: relative;
+		padding-left: 70px;
+		font-weight: bold }
+
+	.post-body .post-meta .meta-author img {
+		position: absolute;
+		top: -20px;
+		left: 0px;
+		margin-right: 10px }
+
+	.post-body .post-meta .meta-categories ul {
+		margin: 0 }
+
+	.post-body .post-meta .meta-categories ul li {
+		padding: 0;
+		margin: 0 10px 0 0 }
+
+	.post-body .post-meta .ic-social-icons {
+		float: right;
+	 	width:150px !important}
+
+	/* Content */
+
+	.post-body .post-content {
+		margin-bottom: 20px }
+
+	.post-body .post-content img {
+		max-width: 100%;
+		height: auto }
+
+	.post-body .post-content .post-thumbnail {
+		margin-bottom: 20px }
+
+	/* Footer */
+
+	.post-body .post-footer {
+		margin-bottom: 40px }
+
+	/* Author */
+
+	.post-body .post-author .avatar {
+		width: 100%;
+		height: auto }
+
+	.post-body .post-author .post-author-name {
+		font-size: 18px;
+		font-weight: 600 }
+
+	.post-body .post-author .post-author-social {
+		margin-top: 20px }
+
+	/* Related Posts */
+
+	.post-body .zem_rp_wrap {
+		margin-left: -1%;
+		width: 102% }
+
+	.post-body .zem_rp_wrap .zem_rp_content {
+		width: 100% }
+
+	.post-body .zem_rp_wrap .zem_rp_content .related_post.zem_rp {
+		margin: 0!important;
+		width: 100% }
+
+	.post-body .zem_rp_wrap .zem_rp_content .related_post.zem_rp li {
+		width: 29%!important;
+		margin: 0 1% !important }
+
+	.post-body .zem_rp_wrap .zem_rp_content .related_post.zem_rp li img {
+		margin: 0 0 20px 0!important;
+		width: 100%!important;
+		height: auto!important;
+		border-radius: 0!important;
+		box-shadow: none!important }
+
+	.post-body .zem_rp_wrap .zem_rp_content .related_post.zem_rp li .zem_rp_title {
+		color: #585858!important;
+		font-size: 14px!important;
+		font-weight: 500 }
+
+	/* Responsive ---------------------------------------------- */
+
+	@media (max-width: 768px) {
+
+		.post-body .zem_rp_wrap {
+			margin-left: 0;
+			width: 100% }
+
+		.post-body .zem_rp_wrap .zem_rp_content .related_post.zem_rp li {
+			width: 100%!important;
+			margin: 0 0 20px 0!important }
+
+		.post-body .zem_rp_wrap .zem_rp_content .related_post.zem_rp li > a {
+			float: none!important }
+
+	}
+
+
+/* @end */
+
+/* @group Author --------------------------------------------- */
+
+	.template-author .post-author {
+		padding: 0 0 20px 0;
+		margin-bottom: 40px;
+		border: none;
+		box-shadow: none!important;
+		border-bottom: 1px solid #ddd; }
+
+	.template-author .post-author-name {
+		font-size: 18px;
+		font-weight: bold }
+
+	.template-author .post-author-social {
+		margin-top: 20px }
+
+/* @end */
+/* @group Sidebar -------------------------------------------- */
+
+	aside .widget {
+		margin-bottom: 40px }
+
+	aside .widget-title {
+		margin-bottom: 16px;
+		padding-bottom: 16px;
+		font-size: 16px;
+		font-weight: bold;
+		border-bottom: 1px solid #ddd }
+
+	aside .widget .social-icons-lists {
+		text-align: center }
+
+/* @end */
+/* @group Share module -------------------------------------------- */
+
+	.share-module-wrapper {
+		margin: 40px 0;
+		padding: 40px;
+		text-align: center }
+
+	.share-module-wrapper strong {
+		display: block;
+		margin: 0 0 30px 0;
+		font-size: 18px }
+
+	.share-module-wrapper .ic-social-icons-share .ic-social-icons-share-item button {
+		padding: 10px 14px 10px 12px!important }
+
+	.share-module-wrapper .ic-social-icons-share .ic-social-icons-share-item button i {
+		margin: 0 8px 0 0!important;
+		font-size: 14px }
+
+	.share-module-wrapper .ic-social-icons-share .ic-social-icons-share-item button span {
+		font-size: 14px }
+
+/* @end */
+/* @end */
+/* @group Templates ============================================= */
+/* @group 404 ------------------------------------------------ */
+
+	.template-404 form {
+		margin: 40px 0 }
+
+/* @end */
+/* @group Landing Pages ------------------------------------------------ */
+
+	.template-landing h1 {
+		margin: 0 0 20px 0 }
+
+	.template-landing .ic-form-title {
+		margin-bottom: 20px;
+		font-size: 22px }
+
+	.template-landing .wp-post-image {
+		max-width: 100%;
+		height: auto }
+
+/* @end */
+/* @group Thank You Pages ------------------------------------------------ */
+
+	.template-thank-you h1 {
+		margin: 0 0 20px 0 }
+
+	.template-thank-you .ic-form-title {
+		margin-bottom: 20px;
+		font-size: 22px }
+
+	.template-thank-you .wp-post-image {
+		max-width: 100%;
+		height: auto }
+
+/* @end */
+/* @group Resources Center ------------------------------------------------ */
+
+	.template-resources-center .wp-post-image {
+		max-width: 100%;
+		height: auto }
+
+/* @end */
+/* @end */
+/* @group Footer ============================================= */
+/* @group Layout --------------------------------------------- */
+
+	body > footer {
+		margin: 40px 0 0 0;
+		padding: 40px 0;
+		background-color: #eee }
+
+	body > footer .footer-logotype {
+		height: 20px }
+
+	body > footer .social-icons-lists {
+		margin-top: -4px;
+		text-align: right }
+
+	body > footer .social-icons-lists li {
+		margin: 0!important }
+
+	body > footer .social-icons-lists li span {
+		top: 0;
+		padding: 8px!important }
+
+/* @end */
