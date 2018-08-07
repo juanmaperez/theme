@@ -273,11 +273,14 @@ input[type="submit"]:hover {
 
 }
 @media(max-width:480px){
-	body > header .logotype, .contracted .logotype {
+	body > header .logotype {
 		height: auto !important;
-		width: 55px !important;
-	 	margin:18px 0px 0px !important}
-
+		width: 45px !important;
+		 margin:10px 0px 0px !important}
+	
+	.contracted .logotype {
+		width: 45px !important;
+		margin:15px 0px 0px !important}
 
 }
 
@@ -350,6 +353,14 @@ input[type="submit"]:hover {
 		background-color: #ffffff !important
 	}
 
+	@media(max-width:480px){
+		body.customize-support > header > .navbar {
+			padding:25px 0px 10px;
+		}
+		.navbar-toggle {
+			margin-top:0px;
+		}
+	}
 	/* @end */
 	/* @group Hero ----------------------------------------------- */
 
@@ -381,7 +392,8 @@ input[type="submit"]:hover {
 			font-size: 72px;
 			font-weight: 500;
 			line-height: 120%;
-			position:absolute	;
+			position:absolute;
+			color:rgb(92, 92, 92);
 			left:10px;
 			top:100px;
 			width:700px;
@@ -404,8 +416,7 @@ input[type="submit"]:hover {
 	 	width:600px;
 		font-family: 'Oswald', sans-serif;
 		color:#ff5252;
-		text-shadow: 1px 1px #474747;
-
+		opacity:0.8;
 	 }
 	 @media(max-width:1200px){
 		 .hero .blog-title {
@@ -425,57 +436,54 @@ input[type="submit"]:hover {
 			 background-position: center;
 			 background-size: cover }
 
+		.hero-caption {
+			padding-top: 120px;
+			padding-bottom: 20px; }
+
 		 .hero .blog-title {
 				 width: 350px !important;
-				 left:70px
+				 left:70px;
+				 font-size: 32px;
 		 }
 		 .hero .blog-subtitle {
-				 width: 350px !important;
-				 left:70px;
-				 top:140px !important
+				font-size: 18px;
+				width: 350px !important;
+				left:70px;
+				top:140px !important
 		 }
 	 }
 
 	 @media(max-width:480px){
 		.hero {
-			height: 160px !important;
-			margin-top:75px;
+			height: 100px !important;
+			margin-top:65px;
 			padding: 0;
 			text-align: center;
 			background-position: center;
 			background-size: cover }
 
 		.hero .blog-title {
-				position:static;
-				width: 100% !important;
-				text-align: left;
-				float: left;
-				margin-top: 60px;
-				width:300px;
-				display: block;
+			position:static;
+			width: 100% !important;
+			text-align: left;
+			float: left;
+			margin-top: 20px;
+			font-size:28px;
+			width:300px;
+			display: block;
 		}
 
 		.hero .blog-subtitle {
 			position:static;
-				width: 100% !important;
-				text-align: left;
+			width: 100% !important;
+			text-align: left;
 		}
 	}
 		/* Responsive ---------------------------------------------- */
 
 		@media (max-width: 768px) {
 
-			.hero-caption {
-				padding-top: 120px;
-				padding-bottom: 20px; }
 
-			.hero .blog-title {
-				font-size: 32px;
-			}
-
-			.hero .blog-subtitle {
-				font-size: 18px;
-			}
 
 		}
 
@@ -511,19 +519,19 @@ input[type="submit"]:hover {
 			border-bottom: 0px }
 
 		.post-listing .post-item .post-header h2 a{
-			color:#474747 !important;
+			color:#707070 !important;
 			font-size:36px;
 		}
 
 		.post-listing .post-item .post-header h2 a:hover{
-			color:#ff5252 !important;
+			color:#474747 !important;
 			text-decoration: none;
 		}
 
 		/* Meta */
 
 		.post-listing .post-item .post-meta {
-			margin: 25px 0 }
+			margin: 15px 0 0 }
 
 		.post-listing .post-item .post-meta .meta-item {
 			float: left;
@@ -638,8 +646,8 @@ input[type="submit"]:hover {
 		.post-listing .post-item .read-more {
 			margin-top: 25px;
 			border-radius: 0px !important;
-			color: #ffffff;
-			background: #ff5252;
+			color: #ff5252;
+			background: #ffffff;
 			border:2px solid #ff5252;
 			font-weight: bolder;
 			padding:10px 25px;
@@ -647,8 +655,8 @@ input[type="submit"]:hover {
 		}
 
 		.post-listing .post-item .read-more:hover {
-			background-color: #ffffff;
-			color:#ef7a7a;
+			background-color: #ff5252;
+			color:#ffffff;
 			border:2px solid #ef7a7a;
 		}
 		/* Responsive ---------------------------------------------- */
@@ -1512,7 +1520,6 @@ input[type="submit"]:hover {
 
 
 .wpcf7-submit {
-
 	border:none !important;
 }
 
@@ -1536,8 +1543,8 @@ input[type="submit"]:hover {
 	border: 0px !important;
 	width:100%;
 	border: 2px solid #ff5252 !important;	
-	background:#ff5252;
-	color:#ffffff;
+	background:#ffffff;
+	color:#ff5252;
 	text-transform:uppercase !important;
 	width:100% !important;
 	padding:11px 14px;
@@ -1545,6 +1552,6 @@ input[type="submit"]:hover {
 	font-weight:bold;
 }
 .inbound-button-submit:hover {
-	background:#ffffff;
-	color:#ff5252;
+	background:#ff5252;
+	color:#ffffff;
 }
