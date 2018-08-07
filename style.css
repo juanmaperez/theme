@@ -459,7 +459,7 @@ input[type="submit"]:hover {
 			margin-top:65px;
 			padding: 0;
 			text-align: center;
-			background-position: center;
+			background-position: -95px;
 			background-size: cover }
 
 		.hero .blog-title {
@@ -467,7 +467,7 @@ input[type="submit"]:hover {
 			width: 100% !important;
 			text-align: left;
 			float: left;
-			margin-top: 20px;
+			margin-top: 30px;
 			font-size:28px;
 			width:300px;
 			display: block;
